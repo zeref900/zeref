@@ -1,0 +1,162 @@
+/* Start home page */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+}
+/* End Global Rules */
+/* start header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 10px;
+}
+header img {
+    width: 75px;
+}
+header ul {
+    display: flex;
+    gap: 15px;
+}
+header ul a {
+    color: #000;
+}
+/* end header */
+main > h1 {
+    text-align: center;
+    margin: 100px 0;
+}
+/* start design images */
+main > .images {
+    display: flex;
+    justify-content: space-around;
+}
+main > .images img {
+    width: 260px;
+}
+/* end design images */
+/* design mission and vision */
+main > .vision-mission {
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 0; /*because space the items lengthwise*/
+}
+main > .vision-mission div {
+    width: 250px;
+    text-align: center;
+    /* this text will be in center*/
+}
+main > .vision-mission div p {
+    font-size: 18px;
+    line-height: 1.7;
+} /*end of home page css faile*/
+
+/* The beginning of the Css file for the first interior page */
+.overview > h1 { /* call this class to To arrange the item */
+    text-align: center; /* this text will be in center*/
+}
+.overview > div { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /*  the space btween them*/
+}
+.overview > div > div { 
+    width: calc((100% - 60px) / 4); /* to be 4 elemint in line */ 
+    padding: 10px 20px; /* the first one for top and down the second for right and left */
+    border-radius: 6px;
+    background-color: aqua;
+} /* end of first thing in page */
+
+.advertisements > h1 { /* to make the text in middle*/
+    text-align: center;
+}
+.advertisements > div{ 
+    display: flex;
+    flex-direction: column; /* the elment will be from up to down*/
+    gap: 20px; /* space btweem each other*/ 
+}
+.advertisements > div > a {
+    width: 100%; /* this code will take the all line for each one */
+    padding: 15px 25px;
+    background-color:cadetblue;
+    text-align: center;
+    color: white;
+    border-radius: 6px; /* to make it rectangular*/
+} /* end the second thing in page */
+
+.news {
+    text-align: center;
+}
+.news > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /*  the space btween them*/
+}
+.news > div > div { /* to reach in four elemnt */
+    width: calc((100% - 20px) / 2); /* to be 2 elemint in line */ 
+    height: 180px; 
+    padding: 20px; /* this for top and down and for  right and left */
+    border-radius: 6px;
+    border: 2px solid; /* line to cover the text  */
+} /* end the third thing in page */
+.academic {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 30px;
+}/* end of  First interior page */
+
+/* srart  Second interior page*/
+.financial-information {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    /* so can present the elemnt in the page display will  determine the display state of items */
+    /* gap here to be a spaece btweem each one  */
+}
+.financial-information > div {
+    width: 300px;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+.other-cases > h1 {
+    margin-top: 100px;
+    /* So that there is space between it and the elements above */
+    text-align: center;
+}
+
+.other-cases > p {
+    font-size: 24px;
+    /* so the text br large */
+}
+/* End of Second interior page */
+/* Start . Forth interior page. */
+.map {
+    display: flex;
+}
+
+.map > div {
+    padding: 10px;
+    border: 0.5px solid;
+}
+
+.map > div:first-child > h1 {
+    font-size: 16px;
+    font-weight: 300;
+}
+/* end of css file for all pages */
+ 
+
+
+

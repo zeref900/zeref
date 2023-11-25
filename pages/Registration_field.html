@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration field</title>
+    <!-- this page for Registration in the school so the user give me his information  -->
+</head>
+<body>
+    <h1>Registration field</h1>
+
+    <!-- when the user click submit this will display -->
+    <form action="http://norton.open.ac.uk/reflect.php" method="POST" name="form1">
+        <h2>
+            Student Name:
+
+            <input
+                type="text"
+                placeholder="Enter your name "
+                maxlength="30"
+                required
+                name="Name"
+            > <!-- here i use placeholder to ask from the user to enter value -->
+            <!-- required to Because if the user forgets to enter or does not put anything, he is asked to write it-->
+            <!-- name to br in the submit form -->
+        </h2>
+        <!-- end whith name of student -->
+        <div>
+            <h2>Gender</h2>
+
+            <input type="radio" id="male" value="male" name="male&female" required>
+            <label for="male">Male</label>
+            <!-- to slect one of two things -->
+            <br>
+            <input type="radio" id="female" value="female" name="male&female" required>
+            <label for="female">Female</label>
+            <!-- same thing if the user take this he cant take the first one  -->
+            <br>
+        </div>
+        <!-- end the gender section -->
+        <h2>
+            Date Of Birth: 
+
+            <input 
+                type="date"
+                required
+                name="date"
+            > <!--date  So that it looks like the tool and the user can choose his birth time through it -->
+        </h2>
+        <!--  -->
+        <div>
+            <!-- In order to differentiate between codes like the h2 and datalist i use div  -->
+            <h2>
+                Your Grade:
+                <input list="Grades" placeholder="select your grade" name="gtade" required>
+                <!-- lidt In order to make it easier for the user to choose his level of study -->
+            </h2> 
+            <!-- To list all the options available to the user -->
+            <datalist id="Grades">
+                <option value="KG-1">
+                <option value="Kg-2">
+                <option value="Kg-3">
+                <option value="Grade-1">
+                <option value="Grade-2">
+                <option value="Grade-3">
+                <option value="Grade-4">
+                <option value="Grade-5">
+                <option value="Grade-6">
+                <option value="Grade-7">
+                <option value="Grade-8">
+                <option value="Grade-9">
+                <option value="Grade-10">
+                <option value="Grade-11">
+                <option value="Grade-12">
+            </datalist>
+            <!-- end of datalist -->
+        </div>
+        <!--  -->
+        <h2>
+            Contact Number:
+            <input type="number" placeholder="Example 0546036350" name="phone-number" required min="0">
+            <!-- use bumber here not text brcase he will enter number -->
+        </h2>
+        <!-- end number section -->
+        <h2>
+            E-mail Address: 
+            <input type="email" required placeholder="enter email" maxlength="200" name="email">
+        </h2>
+        <!-- use div  -->
+        <div>
+            <!-- I will finish them later and put them between each other -->
+            <h2>Comment:</h2>
+            <textarea placeholder="add comment (optional)" maxlength="600" cols="30" rows="8" name="comment"></textarea>
+            <!-- finish -->
+        </div>
+        <!-- the last one  -->
+        <button type="submit">
+            submit form
+        </button>
+    </form>
+</body>
+</html>
